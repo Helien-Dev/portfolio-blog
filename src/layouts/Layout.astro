@@ -185,7 +185,13 @@ html {
 	.enable-banner.is-home #banner {
 		@apply h-[var(--banner-height-home)] translate-y-0
 	}
+	.enable-banner.is-home #banner-dark {
+		@apply h-[var(--banner-height-home)] translate-y-0
+	}
 	.enable-banner #banner {
+		@apply h-[var(--banner-height-home)] translate-y-[var(--bannerOffset)]
+	}
+	.enable-banner #banner-dark {
 		@apply h-[var(--banner-height-home)] translate-y-[var(--bannerOffset)]
 	}
 	.enable-banner.is-home #main-grid {
@@ -363,13 +369,13 @@ function initCustomScrollbar() {
 function showBanner() {
 	if (!siteConfig.banner.enable) return;
 
-	const banner = document.getElementById('banner');
-	if (!banner) {
+	const banners = document.querySelectorAll('#banner, #banner-dark');
+	if (!banners.length) {
 		console.error('Banner element not found');
 		return;
 	}
 
-	banner.classList.remove('opacity-0', 'scale-105');
+	banners.forEach(el => el.classList.remove('opacity-0', 'scale-105'));
 }
 
 function init() {
