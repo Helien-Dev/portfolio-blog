@@ -13,8 +13,8 @@
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
-    "deploy": "pnpm run build && wrangler pages deploy",
-    "cf:preview": "pnpm run build && wrangler pages dev",
+    "deploy": "pnpm run build && wrangler deploy",
+    "cf:preview": "pnpm run build && wrangler dev",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {

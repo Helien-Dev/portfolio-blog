@@ -7,6 +7,12 @@ y este proyecto sigue [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Deploy en Cloudflare: `wrangler.toml` pasa al formato de Workers con assets
+  estáticos (`[assets] directory = "./dist"`) para que `wrangler deploy`
+  funcione; los scripts `deploy` / `cf:preview` usan `wrangler deploy` / `wrangler dev`.
+
 ## [1.0.0] - 2026-08-28
 
 Primera versión pública del blog personal, construido sobre la plantilla
@@ -15,7 +21,7 @@ Primera versión pública del blog personal, construido sobre la plantilla
 
 ### Added
 
-- Configuración de despliegue en Cloudflare Pages con Wrangler
+- Configuración de despliegue en Cloudflare con Wrangler
   (`wrangler.toml`, `public/_headers`, scripts `deploy` y `cf:preview`).
 - Banner con soporte de tema: imágenes independientes para claro y oscuro
   (`banner-light.png` / `banner-dark.png`) que se intercambian al cambiar de
