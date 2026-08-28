@@ -165,6 +165,15 @@ const bannerOffset =
 	'banner-height': `${BANNER_HEIGHT}vh`,
 }}>
 @tailwind components;
+
+html {
+	background-image:
+		linear-gradient(to right, var(--grid-line-x) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-line-y) 1px, transparent 1px);
+	background-size: 96px 96px;
+	background-attachment: fixed;
+}
+
 @layer components {
 	.enable-banner.is-home #banner-wrapper {
 		@apply h-[var(--banner-height-home)] translate-y-[var(--banner-height-extend)]

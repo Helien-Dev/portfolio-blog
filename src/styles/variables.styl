@@ -24,8 +24,12 @@ define(vars)
 
 define({
   --primary: oklch(0.70 0.14 var(--hue)) oklch(0.75 0.14 var(--hue))
-  --page-bg: oklch(0.95 0.01 var(--hue)) oklch(0.16 0.014 var(--hue))
-  --card-bg: white oklch(0.23 0.015 var(--hue))
+  --secondary: #fb923c #fb923c
+  --page-bg: oklch(0.95 0.01 var(--hue)) #13151a
+  --grid-line-x: rgba(0, 0, 0, 0.035) rgba(120, 120, 120, 0.058)
+  --grid-line-y: rgba(0, 0, 0, 0.03) rgba(120, 120, 120, 0.055)
+  --card-bg: white #1c1c1f
+  --panel-bg: white rgba(28, 28, 31, 0.55)
 
   --btn-content: oklch(0.55 0.12 var(--hue)) oklch(0.75 0.1 var(--hue))
 
@@ -39,31 +43,31 @@ define({
   --btn-card-bg-hover: oklch(0.98 0.005 var(--hue)) oklch(0.3 0.03 var(--hue))
   --btn-card-bg-active: oklch(0.9 0.03 var(--hue)) oklch(0.35 0.035 var(--hue))
 
-  --enter-btn-bg: var(--btn-regular-bg)
-  --enter-btn-bg-hover: var(--btn-regular-bg-hover)
-  --enter-btn-bg-active: var(--btn-regular-bg-active)
+  --enter-btn-bg: var(--secondary)
+  --enter-btn-bg-hover: #f97316
+  --enter-btn-bg-active: #ea580c
 
-  --deep-text: oklch(0.25 0.02 var(--hue))
+  --deep-text: oklch(0.25 0.02 var(--hue)) #e5e7eb
 
-  --title-active: oklch(0.6 0.1 var(--hue))
+  --title-active: oklch(0.6 0.1 var(--hue)) #1d4ed8
 
-  --line-divider: black(0.08) white(0.08)
+  --line-divider: black(0.08) rgba(255, 255, 255, 0.08)
 
-  --line-color: black(0.1) white(0.1)
-  --meta-divider: black(0.2) white(0.2)
+  --line-color: black(0.1) rgba(255, 255, 255, 0.08)
+  --meta-divider: black(0.2) rgba(255, 255, 255, 0.2)
 
   --inline-code-bg: var(--btn-regular-bg)
   --inline-code-color: var(--btn-content)
-  --selection-bg: oklch(0.90 0.05 var(--hue)) oklch(0.40 0.08 var(--hue))
-  --codeblock-selection: oklch(0.40 0.08 var(--hue))
-  --codeblock-bg: oklch(0.17 0.015 var(--hue)) oklch(0.17 0.015 var(--hue))
-  --codeblock-topbar-bg: oklch(0.3 0.02 var(--hue)) oklch(0.12 0.015 var(--hue))
+  --selection-bg: oklch(0.90 0.05 var(--hue)) rgba(37, 99, 235, 0.35)
+  --codeblock-selection: rgba(37, 99, 235, 0.35)
+  --codeblock-bg: oklch(0.17 0.015 var(--hue)) #16181d
+  --codeblock-topbar-bg: oklch(0.3 0.02 var(--hue)) #1c1c1f
 
   --license-block-bg: black(0.03) var(--codeblock-bg)
 
-  --link-underline: oklch(0.93 0.04 var(--hue)) oklch(0.40 0.08 var(--hue))
-  --link-hover: oklch(0.95 0.025 var(--hue)) oklch(0.40 0.08 var(--hue))
-  --link-active: oklch(0.90 0.05 var(--hue)) oklch(0.35 0.07 var(--hue))
+  --link-underline: oklch(0.93 0.04 var(--hue)) #2563eb
+  --link-hover: oklch(0.95 0.025 var(--hue)) #3b82f6
+  --link-active: oklch(0.90 0.05 var(--hue)) #1d4ed8
 
   --float-panel-bg: white oklch(0.19 0.015 var(--hue))
 
