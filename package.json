@@ -1,7 +1,7 @@
 {
   "name": "portfolio-blog",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,6 +13,8 @@
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
+    "deploy": "pnpm run build && wrangler pages deploy",
+    "cf:preview": "pnpm run build && wrangler pages dev",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
@@ -70,7 +72,8 @@
     "@types/mdast": "^4.0.4",
     "@types/sanitize-html": "^2.16.1",
     "postcss-import": "^16.1.1",
-    "postcss-nesting": "^13.0.2"
+    "postcss-nesting": "^13.0.2",
+    "wrangler": "^4.127.1"
   },
   "packageManager": "pnpm@10.34.5"
 }
